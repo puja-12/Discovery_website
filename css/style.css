@@ -1,0 +1,464 @@
+* {
+    font-family: Century GOTHIC;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../assets/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#nav {
+    background-color: none;
+    height: 70px;
+    width: 100%;
+
+
+}
+
+ul {
+    float: right;
+    margin-top: 40px;
+
+}
+
+ul li {
+
+    display: inline-block;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 0px solid transparent;
+    margin-right: 40px;
+}
+
+.logo img {
+    float: left;
+    width: 170px;
+    height: 60px;
+    margin-left: 120px;
+    margin-top: 20px;
+    /* filter: white(100%); */
+
+}
+
+.ctext {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-size: 50px;
+    font-family: gt-sectra;
+
+
+}
+
+.mainDiv {
+    width: 100vw;
+    height: 140vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.subdiv {
+    width: 33.3%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imgBox {
+    width: 100%;
+    height: 70%;
+    float: left;
+    /* position: relative;
+    background: #000;
+    overflow: hidden; */
+    /* border: 1px solid red;  */
+
+}
+
+.imgBox img {
+
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+
+}
+
+.labelBox {
+    width: 100%;
+    height: 30%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-family: gt-sectra;
+}
+
+.footer {
+    width: 100vw;
+    height: 70vh;
+    background-color: #161f1e;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: relative;
+
+}
+
+.foot_logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+    /* border: 1px solid red; */
+
+}
+
+.footer p {
+    position: absolute;
+    bottom: 20%;
+    font-size: 12px;
+    left: 13%;
+}
+
+.foot_logo img {
+    width: 8%;
+    height: 10%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+
+
+
+
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+  
+
+
+
+
+
+}
+
+.lastnav1 {
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+
+
+}
+.footbox2{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red;  */
+    height: 100%;
+    width: 170%;
+} 
+
+
+
+
+.lastnav {
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+
+}
+
+.lastnav ul {
+    margin-top: 0px;
+    position: absolute;
+    top: 70px;
+
+
+}
+li, ol, ul {
+    list-style: none;
+}
+.lastnav li {
+
+    display: inline-table;
+    padding: 8px 14px;
+
+}
+
+.lastnav1 ul {
+    margin-top: 0px;
+    position: absolute;
+    top: 70px;
+
+
+}
+
+.lastnav1 li {
+
+    display: inline-table;
+    padding: 8px 14px;
+
+}
+
+#text {
+    font-size: 11px;
+    margin-left: 19px;
+
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    #nav {
+        display: none;
+    }
+
+    .mainDiv {
+
+        flex-direction: column;
+        height: auto;
+        flex-wrap: wrap;
+        width: 100vw;
+
+    }
+
+    .subdiv {
+        width: 100%;
+        height: 60vh;
+
+    }
+
+    .imgBox {
+        /* height: 30rem; */
+        width: 100%;
+        height: 70%;
+
+    }
+
+    .imgBox img {
+        height: 100%;
+    }
+
+    .labelBox {
+        height: 30%;
+        width: 100%;
+    }
+    .footer {
+        width: 100vw;
+        height: 140vh;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+
+    .foot_logo {
+        width: 100%;
+        height: 8rem;
+        /* border: 1px solid red; */
+
+    }
+
+
+    .foot_logo img {
+        width: 10%;
+        height: auto;
+        left: 45px;
+        top: 30px;
+    }
+
+    .content {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        border: 1px solid red;
+        margin-bottom: 0rem;
+
+    }
+    .footbox2{
+        flex-direction:row ;
+        width: 100%;
+        height: 19rem;
+        position: relative;
+        text-align: left;
+        border: 1px solid red;
+     }
+    
+
+    .lastnav {
+        
+        width: 100%;
+        /* position: absolute; */
+        left:20px;
+        
+    
+        /* height: 25px; */
+        border: 1px solid yellow;
+
+    }
+  
+
+    .lastnav1 {
+
+
+        width: 100%;
+        height: 11rem;
+        /* border: 1px solid red; */
+        /* margin-bottom: 2rem; */
+        left:20px;
+        
+
+
+
+    }
+    .footer p{
+        top: 680px;
+    }
+    .lastnav1 li {
+    
+        display: inline-block;
+       /* margin-bottom: 10rem; */
+    
+    }
+}
+
+    
+   
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    #nav {
+        display: none;
+    }
+
+    .mainDiv {
+
+        flex-direction: row;
+        height: auto;
+        flex-wrap: wrap;
+
+
+    }
+
+    .subdiv {
+        width: 50%;
+        height: auto;
+
+
+
+
+    }
+
+    .imgBox .labelBox {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        width: 100vw;
+        height: 140vh;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+
+    .foot_logo {
+        width: 100%;
+        height: 8rem;
+        /* border: 1px solid red; */
+
+    }
+
+
+    .foot_logo img {
+        width: 10%;
+        height: auto;
+        left: 45px;
+        top: 30px;
+    }
+
+    .content {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* border: 1px solid red; */
+        margin-bottom: 0rem;
+
+    }
+    .footbox2{
+        flex-direction:row ;
+        width: 100%;
+        height: 19rem;
+        position: relative;
+        /* border: 1px solid red; */
+     }
+    
+
+    .lastnav {
+        
+        width: 100%;
+        /* position: absolute; */
+        left:20px;
+        
+    
+        /* height: 25px; */
+        /* border: 1px solid red; */
+
+    }
+  
+
+    .lastnav1 {
+
+
+        width: 100%;
+        height: 11rem;
+        /* border: 1px solid red; */
+        /* margin-bottom: 2rem; */
+        left:20px;
+        
+
+
+
+    }
+    .footer p{
+        top: 680px;
+    }
+    .lastnav1 li {
+    
+        display: inline-block;
+       /* margin-bottom: 10rem; */
+    
+    }
+    
+    
+}
+
+
+
